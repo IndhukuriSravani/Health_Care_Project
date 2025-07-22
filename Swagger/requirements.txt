@@ -1,0 +1,33 @@
+Django>=4.2
+djangorestframework>=3.14.0
+psycopg2-binary>=2.9
+python-decouple>=3.8
+django-environ>=0.11.2
+gunicorn>=20.1.0
+
+# PDF Generation
+weasyprint>=60.2
+reportlab>=4.1.0
+qrcode>=7.4.2
+Pillow>=10.2.0
+
+# Graphing Libraries
+matplotlib>=3.8.0
+plotly>=5.20.0
+chartjs>=0.3.0
+
+# AI/ML
+scikit-learn>=1.5.0
+pandas>=2.2.2
+numpy>=1.26.4
+
+# Swagger / OpenAPI
+drf-yasg>=1.21.7
+
+# i18n / Localization
+Babel>=2.14.0
+django-modeltranslation>=0.18.11
+
+# Dev Tools
+ipython
+black
