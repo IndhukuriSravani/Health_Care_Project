@@ -1,0 +1,15 @@
+class PatientViewSet(viewsets.ModelViewSet):
+    queryset = Patient.objects.all()
+    serializer_class = PatientSerializer
+
+class VisitViewSet(viewsets.ModelViewSet):
+    queryset = Visit.objects.all()
+    serializer_class = VisitSerializer
+
+class ECGViewSet(viewsets.ModelViewSet):
+    queryset = ECG.objects.all()
+    serializer_class = ECGSerializer
+
+    @action(detail=True)
+    def download(self, request, pk=None):
+        return download_report(request, visit_id=pk)
