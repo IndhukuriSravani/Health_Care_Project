@@ -1,0 +1,6 @@
+<div id="dashboard"></div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+  const data = { /* JSON from view: counts, risk distribution, etc. */ };
+  Plotly.newPlot('dashboard', [ /* build bar/gauge charts */ ]);
+</script>
